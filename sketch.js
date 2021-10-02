@@ -5,7 +5,7 @@ let base1;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   colorMode(HSB, 360, 100, 100, 100);
-  frameRate(10);
+  frameRate(8);
   base = height;
   base1 = 0;
   //web cam capture
@@ -26,9 +26,9 @@ function draw() {
   strokeWeight(10);
   line(0, base, width, base);
   line(0, base1, width, base1);
-  let num = 10
-  base -= random(-num, num);
-  base1 += random(-num, num);
+  let num = random(10);
+  base -= num;
+  base1 += num;
   if (base <= 0){
     base = height;
   }
