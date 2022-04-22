@@ -36,3 +36,7 @@ function draw() {
     base1 = 0;
   }
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
